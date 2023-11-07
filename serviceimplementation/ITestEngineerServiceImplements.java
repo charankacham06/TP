@@ -14,33 +14,34 @@ public class ITestEngineerServiceImplements implements ITestEngineerService {
 	@Autowired
 	private TestEngineerRepository terepository;
 	@Override
-	public TestEngineerDTO addTestEngineer(TestEngineerDTO testEngineer) {
+	public String addTestEngineer(TestEngineerDTO testEngineer) {
 		// TODO Auto-generated method stub
-		return null;
+		terepository.addTestEngineer(testEngineer);
+		return "Test Added successfully";
 	}
 
 	@Override
-	public TestEngineerDTO updateTestEngineer(TestEngineerDTO testEngineer) {
-		// TODO Auto-generated method stub
-		return null;
+	public String updateTestEngineer(TestEngineerDTO testEngineer) {
+		terepository.updateTestEngineer(testEngineer);
+		return "TestEngineer Updated Successfully";
 	}
 
 	@Override
 	public TestEngineerDTO getTestEngById(Integer testerId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return terepository.getTestEngById(testerId);
 	}
 
 	@Override
 	public List<TestEngineerDTO> getAllTesters() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return terepository.getAllTesters();
 	}
 
 	@Override
 	public List<ProjectDTO> getProjectByTestEngId(Integer testEngId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return terepository.getProjectByTestEngId(testEngId);
 	}
 
 }

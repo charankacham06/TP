@@ -7,8 +7,8 @@ import com.bugtrackingsystem.dto.UserDTO;
 
 @Service
 public interface IUserService {
-	UserDTO registerUser(UserDTO user);
-	UserDTO signIn(String userName, String password);
-	// use session management accordingly
+	String registerUser(UserDTO user);
+	String signIn(String userName, String password);
+	
 	String signOut();
 }

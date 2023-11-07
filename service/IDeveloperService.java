@@ -9,8 +9,8 @@ import com.bugtrackingsystem.dto.ProjectDTO;
 
 @Service
 public interface IDeveloperService {
-	DeveloperDTO addDeveloper(DeveloperDTO developer);
-	DeveloperDTO updateDeveloper(DeveloperDTO developer);
+	String addDeveloper(DeveloperDTO developer);
+	String updateDeveloper(DeveloperDTO developer);
 	DeveloperDTO getDeveloperById(Integer devId);
 	List<DeveloperDTO> getAllDevelopers();
 	List<ProjectDTO> getProjectByDevId(Integer devId);

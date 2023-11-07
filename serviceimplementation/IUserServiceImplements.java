@@ -11,21 +11,21 @@ public class IUserServiceImplements implements IUserService{
 	@Autowired
 	private UserRepository userrepository;
 	@Override
-	public UserDTO registerUser(UserDTO user) {
-		
-		return null;
+	public String registerUser(UserDTO user) {
+		userrepository.registerUser(user);
+		return "User Registered Succesfully";
 	}
 
 	@Override
-	public UserDTO signIn(String userName, String password) {
-		// TODO Auto-generated method stub
-		return null;
+	public String signIn(String userName, String password) {
+		userrepository.signIn(userName, password);
+		return "User Signed In";
 	}
 
 	@Override
 	public String signOut() {
-		// TODO Auto-generated method stub
-		return null;
+		userrepository.signOut();
+		return "User Signed Out";
 	}
 
 }

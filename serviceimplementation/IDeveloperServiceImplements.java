@@ -14,33 +14,33 @@ public class IDeveloperServiceImplements implements IDeveloperService{
 	@Autowired
 	private DeveloperRepository devrepository;
 	@Override
-	public DeveloperDTO addDeveloper(DeveloperDTO developer) {
-		// TODO Auto-generated method stub
-		return null;
+	public String addDeveloper(DeveloperDTO developer) {
+		devrepository.addDeveloper(developer);
+		return "Developer Added Succesfully";
 	}
 
 	@Override
-	public DeveloperDTO updateDeveloper(DeveloperDTO developer) {
-		// TODO Auto-generated method stub
-		return null;
+	public String updateDeveloper(DeveloperDTO developer) {
+		devrepository.updateDeveloper(developer);
+		return "Developer Updated Succesfully";
 	}
 
 	@Override
 	public DeveloperDTO getDeveloperById(Integer devId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return devrepository.getDeveloperById(devId);
 	}
 
 	@Override
 	public List<DeveloperDTO> getAllDevelopers() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return devrepository.getAllDevelopers();
 	}
 
 	@Override
 	public List<ProjectDTO> getProjectByDevId(Integer devId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+	 return devrepository.getProjectByDevId(devId);
 	}
 
 }

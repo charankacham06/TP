@@ -17,38 +17,38 @@ public class IProjectServiceImplements implements IProjectService {
 	private ProjectRepository projectrepository;
 	@Override
 	public ProjectDTO createProject(ProjectDTO projDTO) {
-		// TODO Auto-generated method stub
-		return null;
+		 
+		return projectrepository.createProject(projDTO);
 	}
 
 	@Override
 	public ProjectDTO getProjectById(Integer projId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return projectrepository.getProjectById(projId);
 	}
 
 	@Override
 	public List<ProjectDTO> getAllProjects() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return projectrepository.getAllProjects();
 	}
 
 	@Override
 	public ProjectDTO updateProject(ProjectDTO projDTO) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return projectrepository.updateProject(projDTO);
 	}
 
 	@Override
 	public List<DeveloperDTO> getDevelopersByProjectId(Integer projId) {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return projectrepository.getDevelopersByProjectId(projId);
 	}
 
 	@Override
 	public List<TestEngineerDTO> getTestEngineersByProjectId(Integer projId) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return projectrepository.getTestEngineersByProjectId(projId);
 	}
 
 }
