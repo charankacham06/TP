@@ -9,6 +9,6 @@ import com.bugtrackingsystem.dto.UserDTO;
 public interface IUserService {
 	String registerUser(UserDTO user);
 	String signIn(String userName, String password);
-	
+	// use session management accordingly
 	String signOut();
 }

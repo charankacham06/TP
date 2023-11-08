@@ -10,7 +10,7 @@ import com.bugtrackingsystem.dto.ProjectDTO;
 import com.bugtrackingsystem.repository.DeveloperRepository;
 import com.bugtrackingsystem.service.IDeveloperService;
 @Service
-public class IDeveloperServiceImplements implements IDeveloperService{
+public class IDeveloperServiceImplementation implements IDeveloperService{
 	@Autowired
 	private DeveloperRepository devrepository;
 	@Override

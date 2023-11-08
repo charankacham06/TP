@@ -10,7 +10,7 @@ import com.bugtrackingsystem.dto.TestEngineerDTO;
 import com.bugtrackingsystem.repository.TestEngineerRepository;
 import com.bugtrackingsystem.service.ITestEngineerService;
 @Service
-public class ITestEngineerServiceImplements implements ITestEngineerService {
+public class ITestEngineerServiceImplementation implements ITestEngineerService {
 	@Autowired
 	private TestEngineerRepository terepository;
 	@Override

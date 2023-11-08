@@ -10,7 +10,7 @@ import com.bugtrackingsystem.dto.BugDTO;
 import com.bugtrackingsystem.repository.BugRepository;
 import com.bugtrackingsystem.service.IBugService;
 @Service
-public class IBugServiceImplements implements IBugService{
+public class IBugServiceImplementation implements IBugService{
 	@Autowired
 	private BugRepository bugrepository;
 	@Override

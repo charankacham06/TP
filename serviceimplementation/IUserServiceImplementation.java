@@ -7,7 +7,7 @@ import com.bugtrackingsystem.dto.UserDTO;
 import com.bugtrackingsystem.repository.UserRepository;
 import com.bugtrackingsystem.service.IUserService;
 @Service
-public class IUserServiceImplements implements IUserService{
+public class IUserServiceImplementation implements IUserService{
 	@Autowired
 	private UserRepository userrepository;
 	@Override

@@ -12,7 +12,7 @@ import com.bugtrackingsystem.repository.ProjectRepository;
 import com.bugtrackingsystem.service.IProjectService;
 
 @Service
-public class IProjectServiceImplements implements IProjectService {
+public class IProjectServiceImplementation implements IProjectService {
 	@Autowired
 	private ProjectRepository projectrepository;
 	@Override
